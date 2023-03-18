@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+  }
+  .background {
+    background: #f6f9fc;
+    padding: 50px 0;
+  }
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+  .d_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .c_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .f_flex {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  li {
+    list-style: none;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .RText {
+    text-align-last: right;
+  }
+  input, button {
+    border: none;
+    outline: none;
+    background-color: none;
+  }
+  .row{
+    width: 50%;
+  }
+  .icon-circle{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f3f5f9;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .boxShadow{
+    box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
+  }
+/* #root {
+ width: 100%;
+ height: 100%;
+} */
+
+/***  carousel    ***/
+
+.btn_primary {
+  background-color: #0f3460;
+  padding: 13px 40px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.top{
+  margin-top: 80px;
+}
+.mtop{
+  margin-top: 40px;
+}
