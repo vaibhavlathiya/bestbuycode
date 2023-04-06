@@ -11,26 +11,23 @@ function Nav() {
     <>
       <header className='header'>
         <div className='container d_flex'>
-          <div className='categories d_flex'>
-            <span className='fa-solid fa-border-all'></span>
+          <div className='d_flex'>
+            {/* <span className='fa-solid fa-border-all'></span>
             <h4>
               Categories<i className='fa fa-chevron-down'></i>
-            </h4>
+            </h4> */}
           </div>
 
-          <div className='nav-link'>
+          <div className='navlink'>
             <ul className={MobileMenu? "nav-links-MobileMenu" : "link f_flex capitalize"} onClick={() => setMobileMenu(false)}>
               <li>
-                <Link to='/'> MEN'S </Link>
+                <Link to='/'> HOME </Link>
               </li>
               <li>
-                <Link to='/pages'> WOMEN'S </Link>
+                <Link to='/Products'> PRODUCTS </Link>
               </li>
               <li>
-                <Link to='/user'> KIDS </Link>
-              </li>
-              <li>
-                <Link to='/track'> ACCESORIES </Link>
+                <Link to='/'> TRACK MY ORDER </Link>
               </li>
               <li>
                 <Link to='/contact'> CONTACT </Link>

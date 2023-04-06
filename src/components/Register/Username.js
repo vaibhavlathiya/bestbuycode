@@ -4,7 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import { useFormik } from 'formik';
 import { usernameValidate } from './Validation'; 
 
-import avatar from '../Register/av1.jpg';  
+// import avatar from '../Register/av1.jpg';  
 import style from './Username.module.css';  
 
 function Username() {
@@ -35,13 +35,13 @@ function Username() {
                 </div>
 
                 <form className='py-1' onSubmit={formik.handleSubmit}>
-                    <div className='profile flex justify-center py-4'>
+                    {/* <div className='profile flex justify-center py-4'>
                         <img src={avatar} className={style.profile_img} alt="avataer" />
-                    </div>
+                    </div> */}
 
                     <div className='textbox flex flex-col items-center gap-6'>
                         <input type='text' {...formik.getFieldProps('username')} className={style.textbox} placeholder='Username' />
-                        <button className={style.btn} type='submit'> Create </button>
+                        <button className={style.btn} type='submit'> <Link className='' to='/Password'> Create </Link> </button>
                     </div>
 
                     <div className='text-center py-4'>

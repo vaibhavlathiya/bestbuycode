@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 // import logo from "../assets/images/logo1.jpg"
 import { Link } from 'react-router-dom';
 
 
+function Search( {cartItem} ) {
 
-function Search() {
-
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll",function () {
         const search = document.querySelector(".search")
         search.classList.toggle("active", window.scrollY > 100)
     })
+
 
   return (
     <>
@@ -28,14 +28,14 @@ function Search() {
 
                 <div className='icon f_flex width'>
                     <div className='user'>
-                        <Link to ='/Register'>
+                        <Link to ='/Username'>
                         <i className='fa fa-user icon-circle'></i>
                         </Link>
                     </div>
                     <div className='cart'>
-                        <Link to='/cart'>
+                        <Link to='/Cart'>
                             <i className='fa fa-shopping-bag icon-circle'></i>
-                            <span>0</span>
+                            <span>{cartItem.length === 0 ? "0" : cartItem.length}</span>
                         </Link>
                     </div>
                 </div>

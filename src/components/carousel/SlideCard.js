@@ -10,15 +10,15 @@ import 'slick-carousel/slick/slick-theme.css'
 function SlideCard() {
 
   const settings = ({
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 80,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     appendDots: (dots) => {
       return <ul style={{ margin: "0px" }}>{dots}</ul>
-    }
+    },
   });
 
   return (

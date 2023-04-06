@@ -5,11 +5,11 @@ import NavUp from './NavUp';
 import Search from './Search';
 
 
-function Header() {
+function Header( {cartItem} ) {
   return (
     <>
       <NavUp />
-      <Search />
+      <Search cartItem={cartItem} />
       <Nav />
     </>
   )
